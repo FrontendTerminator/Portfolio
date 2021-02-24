@@ -1,0 +1,15 @@
+.worksBlock {
+    height: 100vh;
+    background-color: #F1E2FF;
+}
+.worksContainer {
+    border: 1px solid darkred;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+}
+.title {
+    display: flex;
+    justify-content: center;
+    background-color: darkgrey;
+}
