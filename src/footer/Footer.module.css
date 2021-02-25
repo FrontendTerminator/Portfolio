@@ -1,0 +1,27 @@
+.footerBlock {
+    background-color: #EBFFE4;
+    height: 300px;
+}
+.footerContainer {
+    height: 100%;
+    border: 1px solid black;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.title {
+    background-color: #C9C3BE;
+}
+.iconsBlock {
+    border: 1px solid black;
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.text {
+    background-color: #d9d8d8;
+}

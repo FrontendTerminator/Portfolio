@@ -1,0 +1,30 @@
+.workBlock {
+    background-color: #d9d8d8;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+.icon {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button {
+    background-color: #929292;
+}
+.description {
+    background-color: #ECECEC;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.projectName {
+    width: 200px;
+    margin: 5px;
+    background-color: #D9D9D9;
+}
+.shortDescription {
+    margin: 5px;
+    background-color: #D9D9D9;
+}

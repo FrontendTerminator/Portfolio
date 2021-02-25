@@ -1,14 +1,15 @@
 import React from 'react';
 import style from './Works.module.css';
-import {Work} from "./work/Work";
+import {WorkBlock} from "./work/WorkBlock";
 
 export function Works() {
     return (
         <div className={style.worksBlock}>
             <div className={style.worksContainer}>
-                <h2 className={style.title}>Мои Работы</h2>
+                <h2 className={style.title}>My works</h2>
                 <div className={style.works}>
-                    <Work/>
+                    <WorkBlock/>
+                    <WorkBlock/>
                 </div>
             </div>
         </div>
