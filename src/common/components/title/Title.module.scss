@@ -1,14 +1,12 @@
 .title {
-    display: flex;
-    justify-content: center;
-    background-color: darkgrey;
-    margin-bottom: 30px;
+  font-family: 'Josefin Sans', sans-serif;
+  display: flex;
+  justify-content: center;
+  background-color: darkgrey;
+  margin-bottom: 30px;
+  position: relative;
 
-    position: relative;
-}
-
-.title h2{
-    font-family: 'Josefin Sans', sans-serif;
+  .title h2 {
     margin: 0;
     font-weight: 300;
     color: #fff;
@@ -16,13 +14,17 @@
     font-size: 36px;
     line-height: 1.2;
     letter-spacing: 5px
-}
+  }
 
-.title::before {
+  &::before {
     content: "";
     position: absolute;
     background: #4e93e6;
     width: 55px;
     height: 1px;
     bottom: -30px;
+  }
 }
+
+
+

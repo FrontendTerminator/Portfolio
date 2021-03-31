@@ -1,5 +1,5 @@
 import React from 'react';
-import style from './Projects.module.css';
+import style from './Projects.module.scss';
 import {WorkBlock} from "./work/WorkBlock";
 import {Title} from "../common/components/title/Title";
 import socialNetwork from "./../assets/images/DSNO8JQW0AErzuV.jpg"

@@ -1,4 +1,4 @@
-import style from "./WorkBlock.module.css";
+import style from "./WorkBlock.module.scss";
 import React from "react";
 
 type WorkBlockPropsType = {
@@ -11,7 +11,7 @@ export function WorkBlock(props: WorkBlockPropsType) {
     return (
         <div className={style.workBlock}>
             <div className={style.icon} style={props.style}>
-                <div className={style.button}>смотерть</div>
+                <a className={style.button}>смотерть</a>
             </div>
             <div className={style.description}>
                 <h3 className={style.projectName}>{props.title}</h3>

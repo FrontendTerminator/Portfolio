@@ -1,0 +1,26 @@
+.worksBlock {
+  min-height: 100vh;
+  background-color: #1f1f20;
+
+  .worksContainer {
+    border: 1px solid darkred;
+    width: 80%;
+    min-height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+
+    .works {
+      width: 100%;
+      border: 1px solid darkred;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin: auto;
+      box-sizing: border-box;
+      @media screen and (max-width: 1003px) {
+        justify-content: center;
+      }
+    }
+  }
+}
