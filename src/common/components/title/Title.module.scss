@@ -1,19 +1,19 @@
-.title {
-  font-family: 'Josefin Sans', sans-serif;
+@import 'src/common/styles/sass/variables';
+
+.blockTitle {
   display: flex;
   justify-content: center;
-  background-color: darkgrey;
-  margin-bottom: 30px;
   position: relative;
 
-  .title h2 {
-    margin: 0;
-    font-weight: 300;
-    color: #fff;
+  .title {
+    font-family: 'Josefin Sans', sans-serif;
+    line-height: 1.2;
+    letter-spacing: 5px;
+    position: relative;
+    font-weight: 400;
+    color: $textColor;
     text-transform: capitalize;
     font-size: 36px;
-    line-height: 1.2;
-    letter-spacing: 5px
   }
 
   &::before {
@@ -22,7 +22,7 @@
     background: #4e93e6;
     width: 55px;
     height: 1px;
-    bottom: -30px;
+    bottom: 0px;
   }
 }
 

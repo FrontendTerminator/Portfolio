@@ -1,10 +1,12 @@
+@import 'src/common/styles/sass/variables';
+
 .footerBlock {
-    background-color: #EBFFE4;
+    background-color: $backgroundColor1;
     height: 300px;
 }
 .footerContainer {
     height: 100%;
-    border: 1px solid black;
+    border: 1px solid white;
     width: 80%;
     margin: auto;
     display: flex;

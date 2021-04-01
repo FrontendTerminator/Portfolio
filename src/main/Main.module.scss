@@ -2,7 +2,7 @@
 
 .mainBlock {
   height: 100vh;
-  background-color: $bgColor1;
+  background-color: $backgroundColor1;
 
   .container {
     border: 1px solid white;
@@ -15,8 +15,8 @@
     flex-wrap: wrap;
 
     .text {
-      width: 700px; /*300px*/
-      background-color: $bgColor2;
+      width: 550px;
+      background-color: $backgroundColor2;
       color: $textColor;
       border: 1px solid white;
 
@@ -33,6 +33,28 @@
         letter-spacing: 5px;
         margin: 0;
         font-weight: 700;
+        display: flex;
+        flex-wrap: wrap;
+
+        .spanName {
+          position: relative;
+          width: 514px;
+          z-index: 1;
+
+          &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 20px;
+            width: 100%;
+            z-index: -1;
+            background: #4e93e6;
+          }
+
+        }
+
       }
 
       .secondString {
@@ -48,6 +70,8 @@
       width: 300px;
       height: 400px;
       background-color: #d9d8d8;
+      background-size: cover;
+      background-position: center;
     }
   }
 }

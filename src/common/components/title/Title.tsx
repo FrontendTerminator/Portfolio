@@ -1,5 +1,5 @@
 import React from 'react';
-import style from './Title.module.scss';
+import s from './Title.module.scss';
 
 type TitlePropsType = {
     text: string
@@ -7,8 +7,8 @@ type TitlePropsType = {
 
 export function Title(props: TitlePropsType) {
     return (
-        <div className={style.title}>
-            <h2>{props.text}</h2>
+        <div className={s.blockTitle}>
+            <h2 className={s.title}>{props.text}</h2>
         </div>
     );
 }
