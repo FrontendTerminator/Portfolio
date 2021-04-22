@@ -1,9 +1,7 @@
-@import 'src/common/styles/sass/variables';
-
 .skill {
   border: 1px solid white;
-  width: 250px;
-  background-color: $backgroundColor2;
+  width: 340px;
+  background-color: #252527;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -18,22 +16,21 @@
   background: rgba(255,255,255,0.1);
   display: block;
   line-height: 80px;
-  font-size: 30px;
-  //box-shadow: -6px 10px 40px rgb(0 0 0 / 6%);
+  font-size: 50px;
+  /*box-shadow: -6px 10px 40px rgb(0 0 0 / 6%);*/
   text-align: center;
   transform: rotate(45deg);
   transform-origin: center;
   font-weight: 400;
+
 }
 
 .icon {
-  width: 60px;
-  height: 60px;
-  background-color: darkgrey;
+  transform: rotate(-45deg);
 }
 
 .title {
-  color: $textColor;
+  color: white;
   text-transform: uppercase;
   margin: 0 0 15px;
   padding: 0;
@@ -48,5 +45,5 @@
   font-size: 14px;
   line-height: 1.8;
   font-family: 'Poppins', sans-serif;
-  color: $textColor;
+  color: white;
 }
