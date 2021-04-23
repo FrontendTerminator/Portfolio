@@ -5,7 +5,6 @@ import {Title} from "../common/components/title/Title";
 import socialNetwork from "./../assets/images/DSNO8JQW0AErzuV.jpg"
 import todoImage from "./../assets/images/Dr40j7zW4AEZdop.jpg"
 
-
 export function Projects() {
 
     const social = {
@@ -17,7 +16,7 @@ export function Projects() {
     }
 
     return (
-        <div className={style.worksBlock}>
+        <div id={"projects"} className={style.worksBlock}>
             <div className={style.worksContainer}>
                 <Title text={'Projects'}/>
                 <div className={style.works}>

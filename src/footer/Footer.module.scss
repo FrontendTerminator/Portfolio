@@ -2,28 +2,49 @@
 
 .footerBlock {
     background-color: $backgroundColor1;
-    height: 300px;
+    height: 206px;
+
+    .footerContainer {
+        height: 100%;
+        border: 1px solid white;
+        width: 80%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .title {
+            color: $textColor;
+            letter-spacing: 3px;
+            font-size: 22px;
+            font-weight: 700;
+            display: block;
+            margin: 0 0 30px;
+            line-height: 1.2;
+            font-family: "Josefin Sans", sans-serif;
+        }
+        .iconsBlock {
+            border: 1px solid white;
+            width: 60%;
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+
+            .link{
+                visibility: visible;
+                animation-name: fadeInUp;
+                display: block;
+                text-align: center;
+                color: $textColor;
+                text-decoration: none;
+                font: 400 14px/1.8 'Poppins', sans-serif;
+            }
+        }
+    }
 }
-.footerContainer {
-    height: 100%;
-    border: 1px solid white;
-    width: 80%;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
-.title {
-    background-color: #C9C3BE;
-}
-.iconsBlock {
-    border: 1px solid black;
-    width: 75%;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
+
+
 .text {
     background-color: #d9d8d8;
 }

@@ -11,6 +11,7 @@
     bottom: 0;
     right: 0;
     opacity: 0.4;
+    z-index: 0;
   }
 
   .container {
@@ -22,9 +23,13 @@
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    @media screen and (max-width: 1208px) {
+      flex-direction: column;
+      justify-content: space-evenly;
+    }
 
     .text {
-      width: 550px;
+      max-width: 550px;
       background-color: $backgroundColor2;
       color: $textColor;
       border: 1px solid white;
@@ -47,7 +52,7 @@
 
         .spanName {
           position: relative;
-          width: 514px;
+          max-width: 514px;
           z-index: 1;
 
           &::after {
@@ -60,6 +65,9 @@
             width: 100%;
             z-index: -1;
             background: #4e93e6;
+            @media screen and (max-width: 644px) {
+              width: 330px;
+            }
           }
         }
       }
@@ -85,11 +93,15 @@
       margin-right: 70px;
 
       .photo {
-        width: 400px;
-        height: 500px;
+        width: 344px;
+        height: 430px;
         background-color: #d9d8d8;
         background-size: cover;
         background-position: center;
+        @media screen and (max-width: 644px) {
+          width: 275px;
+          height: 343px;
+        }
       }
 
       .frame {

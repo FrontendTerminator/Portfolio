@@ -10,7 +10,7 @@ const Fade = require('react-reveal/Fade')
 export function Skills() {
 
     return (
-        <div className={style.skillsBlock}>
+        <div id={"skills"} className={style.skillsBlock}>
             <div className={style.skillsContainer}>
                 <Title text={'My skills'}/>
                 <Fade bottom>

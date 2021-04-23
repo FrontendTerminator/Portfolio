@@ -1,0 +1,19 @@
+@import 'src/common/styles/sass/variables';
+
+.nav {
+  border: 1px solid red;
+  width: 300px;
+  display: flex;
+  justify-content: space-evenly;
+  a {
+    color: $textColor;
+    cursor: pointer;
+    &:hover {
+      text-decoration: none;
+      color: $primaryColor;
+    }
+  }
+  .active {
+    color: $primaryColor;
+  }
+}

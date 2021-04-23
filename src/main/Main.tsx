@@ -1,6 +1,6 @@
 import React from 'react';
 import style from './Main.module.scss';
-import ava2 from './../assets/images/ava2.jpg';
+import ava from './../assets/images/ava.png';
 import Particles from 'react-particles-js';
 import ReactTypingEffect from 'react-typing-effect';
 
@@ -20,17 +20,18 @@ const particlesOpt = {
 
 export function Main() {
     const photo = {
-        backgroundImage: `url(${ava2})`
+        backgroundImage: `url(${ava})`
     }
 
     return (
-        <div className={style.mainBlock}>
+        <div id={"main"} className={style.mainBlock}>
             <Particles className={style.particles} params={particlesOpt}/>
             <Fade bottom>
                 <div className={style.container}>
                     <div className={style.text}>
                         <span className={style.firstString}>Hi There</span>
-                        <h1 className={style.myName}>I am <span className={style.spanName}>Jacob Mikutishvili</span>
+                        <h1 className={style.myName}>I am
+                            <span className={style.spanName}>Jacob <span>Mikutishvili</span></span>
                         </h1>
                         <ReactTypingEffect className={style.secondString}
                                            speed={100}
