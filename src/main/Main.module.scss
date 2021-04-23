@@ -49,6 +49,9 @@
         font-weight: 700;
         display: flex;
         flex-wrap: wrap;
+        @media screen and (max-width: 425px) {
+          font-size: 35px;
+        }
 
         .spanName {
           position: relative;
@@ -67,6 +70,9 @@
             background: #4e93e6;
             @media screen and (max-width: 644px) {
               width: 330px;
+            }
+            @media screen and (max-width: 425px) {
+              width: 248px;
             }
           }
         }

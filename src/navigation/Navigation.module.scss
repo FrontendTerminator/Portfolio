@@ -6,6 +6,8 @@
   display: flex;
   justify-content: space-evenly;
   a {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: larger;
     color: $textColor;
     cursor: pointer;
     &:hover {
