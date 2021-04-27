@@ -1,6 +1,6 @@
 import React from 'react';
 import style from './Main.module.scss';
-import ava from './../assets/images/ava.png';
+import ava from './../assets/images/1ava.jpg';
 import Particles from 'react-particles-js';
 import ReactTypingEffect from 'react-typing-effect';
 
@@ -9,10 +9,10 @@ const Fade = require('react-reveal/Fade')
 const particlesOpt = {
     "particles": {
         "number": {
-            "value": 150,
+            "value": 200,
             "density": {
                 "enable": true,
-                "value_area": 1200
+                "value_area": 1200,
             }
         }
     }
@@ -26,7 +26,7 @@ export function Main() {
     return (
         <div id={"main"} className={style.mainBlock}>
             <Particles className={style.particles} params={particlesOpt}/>
-            <Fade bottom>
+            <Fade>
                 <div className={style.container}>
                     <div className={style.text}>
                         <span className={style.firstString}>Hi There</span>
@@ -37,7 +37,7 @@ export function Main() {
                                            speed={100}
                                            eraseSpeed={70}
                                            typingDelay={2000}
-                                           text={["Fronted Developer", "React-Redux Engineer"]}
+                                           text={["Fronted Developer", "Welcome to my page"]}
                         />
                     </div>
                     <div className={style.photoBlock}>

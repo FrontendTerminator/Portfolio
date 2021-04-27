@@ -15,7 +15,7 @@
   }
 
   .container {
-    border: 1px solid white;
+    //border: 1px solid white;
     height: 100%;
     width: 80%;
     margin: 0 auto;
@@ -30,9 +30,8 @@
 
     .text {
       max-width: 550px;
-      background-color: $backgroundColor2;
       color: $textColor;
-      border: 1px solid white;
+      //border: 1px solid white;
 
       .firstString {
         line-height: 1.8;
@@ -83,7 +82,10 @@
         margin: 0;
         font-weight: 400;
         line-height: 1.8;
-        font-family: Poppins, sans-serif;
+        font-family: "Poppins", sans-serif;
+        @media screen and (max-width: 425px) {
+          font-size: 20px;
+        }
       }
     }
 
@@ -96,7 +98,10 @@
       pointer-events: none;
       position: relative;
       display: table;
-      margin-right: 70px;
+      margin-right: 50px;
+      @media screen and (max-width: 1208px) {
+        margin-right: 20px;
+      }
 
       .photo {
         width: 344px;
@@ -107,6 +112,10 @@
         @media screen and (max-width: 644px) {
           width: 275px;
           height: 343px;
+        }
+        @media screen and (max-width: 425px) {
+          width: 240px;
+          height: 300px;
         }
       }
 
@@ -120,7 +129,7 @@
         bottom: 0;
         z-index: -9;
         height: 110%;
-        width: 104%;
+        width: 103%;
         border: 5px solid #4e93e6;
         right: 0;
         margin-left: 8%;

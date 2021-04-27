@@ -2,7 +2,7 @@
 
 .header {
   height: 80px;
-  border: 1px solid white;
+  //border: 1px solid white;
   background-color: $backgroundColor2;
   display: flex;
   justify-content: flex-end;
@@ -10,4 +10,7 @@
   position: relative;
   width: 100%;
   z-index: 1;
+  @media screen and (max-width: 425px) {
+    justify-content: center;
+  }
 }

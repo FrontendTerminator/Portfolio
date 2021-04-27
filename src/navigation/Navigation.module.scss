@@ -1,13 +1,14 @@
 @import 'src/common/styles/sass/variables';
 
 .nav {
-  border: 1px solid red;
+  //border: 1px solid red;
   width: 300px;
   display: flex;
   justify-content: space-evenly;
   a {
     font-family: 'Josefin Sans', sans-serif;
     font-size: larger;
+    font-weight: 500;
     color: $textColor;
     cursor: pointer;
     &:hover {

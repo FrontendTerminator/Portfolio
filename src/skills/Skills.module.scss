@@ -1,13 +1,14 @@
 @import 'src/common/styles/sass/variables';
 
 .skillsBlock {
-  min-height: 100vh;
+  padding: 100px 0;
+  min-height: 80vh;
   background-color: $backgroundColor2;
 
   .skillsContainer {
-    border: 1px solid white;
+    //border: 1px solid white;
     width: 80%;
-    min-height: 100vh;
+    min-height: 80vh;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -19,15 +20,26 @@
       flex-direction: column;
       width: 100%;
 
+      .title {
+        margin-bottom: -10px;
+      }
+
       .skills {
         border: 1px white;
         width: 100%;
         display: flex;
-        justify-content: space-between;
+        align-items: center;
+        justify-content: space-evenly;
         flex-wrap: wrap;
         margin: auto;
         box-sizing: border-box;
-        margin-top: 12px;
+      }
+      .secondarySkills {
+        padding: 0 20px 0 20px ;
+        margin-top: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
       }
     }
   }

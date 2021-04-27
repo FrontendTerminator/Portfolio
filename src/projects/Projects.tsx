@@ -2,8 +2,10 @@ import React from 'react';
 import style from './Projects.module.scss';
 import {WorkBlock} from "./work/WorkBlock";
 import {Title} from "../common/components/title/Title";
-import socialNetwork from "./../assets/images/DSNO8JQW0AErzuV.jpg"
+import socialNetwork from "./../assets/images/socialNetwork.jpg"
 import todoImage from "./../assets/images/Dr40j7zW4AEZdop.jpg"
+
+const Fade = require('react-reveal/Fade')
 
 export function Projects() {
 
@@ -17,8 +19,11 @@ export function Projects() {
 
     return (
         <div id={"projects"} className={style.worksBlock}>
-            <div className={style.worksContainer}>
+            <Fade>
                 <Title text={'Projects'}/>
+            </Fade>
+            <div className={style.worksContainer}>
+
                 <div className={style.works}>
                     <WorkBlock
                         style={social}

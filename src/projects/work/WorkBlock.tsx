@@ -1,5 +1,7 @@
 import style from "./WorkBlock.module.scss";
 import React from "react";
+import {Button} from "../../common/components/button/Button";
+const Fade = require('react-reveal/Fade')
 
 type WorkBlockPropsType = {
     title: string
@@ -10,16 +12,15 @@ type WorkBlockPropsType = {
 export function WorkBlock(props: WorkBlockPropsType) {
     return (
         <div className={style.workBlock}>
-            <div className={style.icon} style={props.style}>
-                <a className={style.button}>смотерть</a>
-            </div>
-            <div className={style.description}>
-                <h3 className={style.projectName}>{props.title}</h3>
-                <div className={style.shortDescription}>{props.description}</div>
-
-                {/*<div className={style.projectName}>название проекта</div>
-                <div className={style.shortDescription}>краткое описане</div>*/}
-            </div>
+            <Fade>
+                <div className={style.icon} style={props.style}>
+                    <Button text={"view project"}/>
+                </div>
+                <div className={style.description}>
+                    <h3 className={style.projectName}>{props.title}</h3>
+                    <div className={style.shortDescription}>{props.description}</div>
+                </div>
+            </Fade>
         </div>
     );
 }
