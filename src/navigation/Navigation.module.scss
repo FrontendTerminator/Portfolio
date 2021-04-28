@@ -5,18 +5,25 @@
   width: 300px;
   display: flex;
   justify-content: space-evenly;
+
   a {
     font-family: 'Josefin Sans', sans-serif;
     font-size: larger;
     font-weight: 500;
     color: $textColor;
     cursor: pointer;
+
     &:hover {
       text-decoration: none;
       color: $primaryColor;
     }
   }
+
   .active {
     color: $primaryColor;
+  }
+
+  @media screen and (max-width: 451px) {
+    display: none;
   }
 }

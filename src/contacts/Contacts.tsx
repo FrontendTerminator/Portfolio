@@ -90,6 +90,7 @@ export function Contacts() {
                                         : style.button}>
                                 {formik.isSubmitting
                                     ? <span>Sending<ReactTypingEffect speed={200}
+                                                                      cursor={"."}
                                                                       eraseDelay={20}
                                                                       eraseSpeed={200}
                                                                       typingDelay={20}
