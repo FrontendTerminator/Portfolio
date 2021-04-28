@@ -3,7 +3,8 @@
 .burgerNav {
   width: 100%;
   height: 100%;
-  //position: relative;
+  position: fixed;
+  z-index: 2;
 
   .burgerNavItems {
     display: flex;
@@ -52,7 +53,7 @@
     right: 10px;
   }
 
-  @media screen and (min-width: 450px) {
+  /*@media screen and (min-width: 450px) {
     display: none;
-  }
+  }*/
 }

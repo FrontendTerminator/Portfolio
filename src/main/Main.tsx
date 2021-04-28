@@ -3,6 +3,7 @@ import style from './Main.module.scss';
 import ava from './../assets/images/1ava.jpg';
 import Particles from 'react-particles-js';
 import ReactTypingEffect from 'react-typing-effect';
+import {BurgerNavigation} from "../burgerNavigation/BurgerNavigation";
 
 const Fade = require('react-reveal/Fade')
 

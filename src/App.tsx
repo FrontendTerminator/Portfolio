@@ -6,11 +6,13 @@ import {Skills} from "./skills/Skills";
 import {Contacts} from "./contacts/Contacts";
 import {Footer} from "./footer/Footer";
 import {Projects} from "./projects/Projects";
+import {BurgerNavigation} from "./burgerNavigation/BurgerNavigation";
 
 function App() {
     return (
         <div className={style.app}>
-            <Header/>
+            {/*<Header/>*/}
+            <BurgerNavigation/>
             <Main/>
             <Skills/>
             <Projects/>
