@@ -3,7 +3,7 @@ import style from './Projects.module.scss';
 import {WorkBlock} from "./work/WorkBlock";
 import {Title} from "../common/components/title/Title";
 import socialNetwork from "./../assets/images/socialNetwork.jpg"
-import todoImage from "./../assets/images/Dr40j7zW4AEZdop.jpg"
+import todoImage from "./../assets/images/todolist.jpg"
 
 const Fade = require('react-reveal/Fade')
 

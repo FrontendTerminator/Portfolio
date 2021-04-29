@@ -24,7 +24,7 @@ export function WorkBlock(props: WorkBlockPropsType) {
                 <div className={style.description}>
                     <h3 className={style.projectName}>{props.title}</h3>
                     <div className={style.shortDescription}>{props.description}</div>
-                    <a className={style.link} href={props.githubLink}>Go to GitHub</a>
+                    <div><a className={style.link} href={props.githubLink}>Go to GitHub</a></div>
                 </div>
             </Fade>
         </div>

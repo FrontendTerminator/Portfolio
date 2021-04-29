@@ -10,11 +10,22 @@ const Fade = require('react-reveal/Fade')
 const particlesOpt = {
     "particles": {
         "number": {
-            "value": 200,
+            "value": 150,
             "density": {
                 "enable": true,
                 "value_area": 1200,
             }
+        },
+        "color": {
+            "value": "#4E93E6"
+        },
+        "line_linked": {
+            "enable": true,
+            "color": "#4E93E6",
+            "opacity": 0.5
+        },
+        "move": {
+            "speed": 0.8
         }
     }
 }
