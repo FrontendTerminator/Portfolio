@@ -2,7 +2,7 @@ import React from 'react';
 import style from './Contacts.module.scss';
 import {Title} from "../common/components/title/Title";
 import axios from 'axios';
-import {useFormik} from "formik";
+import {Field, useFormik} from "formik";
 import ReactTypingEffect from "react-typing-effect";
 
 const Fade = require('react-reveal/Fade')
@@ -67,7 +67,10 @@ export function Contacts() {
                                    name={"name"}
                                    placeholder={'Name'}
                                    onChange={formik.handleChange}
+
                             />
+                        </Fade>
+                        <Fade>
                             <input className={style.input}
                                    value={formik.values.contacts}
                                    type="text"
@@ -75,6 +78,8 @@ export function Contacts() {
                                    placeholder={'Your contacts'}
                                    onChange={formik.handleChange}
                             />
+                        </Fade>
+                        <Fade>
                             <textarea className={style.textarea}
                                       value={formik.values.message}
                                       name={"message"}

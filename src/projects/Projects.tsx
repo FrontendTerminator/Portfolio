@@ -26,13 +26,17 @@ export function Projects() {
 
                 <div className={style.works}>
                     <WorkBlock
-                        style={social}
-                        title={'Social network'}
-                        description={'social network - training application'}/>
-                    <WorkBlock
+                        link={"https://FrontendTerminator.github.io/todolist"}
+                        githubLink={"https://github.com/FrontendTerminator/todolist"}
                         style={todolist}
                         title={'Todolist'}
                         description={'Todolist - training application'}/>
+                    <WorkBlock
+                        link={"https://FrontendTerminator.github.io/way_of_the_samurai"}
+                        githubLink={"https://github.com/FrontendTerminator/way_of_the_samurai"}
+                        style={social}
+                        title={'Social network'}
+                        description={'social network - training application'}/>
                 </div>
             </div>
         </div>

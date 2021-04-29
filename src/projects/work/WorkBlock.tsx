@@ -8,6 +8,8 @@ type WorkBlockPropsType = {
     title: string
     description: string
     style: React.CSSProperties
+    link: string
+    githubLink: string
 }
 
 export function WorkBlock(props: WorkBlockPropsType) {
@@ -16,12 +18,13 @@ export function WorkBlock(props: WorkBlockPropsType) {
             <Fade>
                 <div className={style.icon} style={props.style}>
                     <div className={style.button}>
-                        <Button text={"view project"}/>
+                        <Button text={"view project"} link={props.link}/>
                     </div>
                 </div>
                 <div className={style.description}>
                     <h3 className={style.projectName}>{props.title}</h3>
                     <div className={style.shortDescription}>{props.description}</div>
+                    <a className={style.link} href={props.githubLink}>Go to GitHub</a>
                 </div>
             </Fade>
         </div>

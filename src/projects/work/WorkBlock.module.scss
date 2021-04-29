@@ -62,6 +62,18 @@
       line-height: 1.8;
       font-family: "Poppins", sans-serif;
     }
+
+    .link {
+      visibility: visible;
+      animation-name: fadeInUp;
+      color: $primaryColor;
+      text-decoration: none;
+      font: 400 14px/1.8 'Poppins', sans-serif;
+
+      &:hover {
+        color: $textColor;
+      }
+    }
   }
 }
 
