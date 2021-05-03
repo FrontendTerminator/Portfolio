@@ -2,15 +2,21 @@ import React from 'react';
 import style from './Contacts.module.scss';
 import {Title} from "../common/components/title/Title";
 import axios from 'axios';
-import {Field, useFormik} from "formik";
+import {Field, Form, useFormik} from "formik";
 import ReactTypingEffect from "react-typing-effect";
 
 const Fade = require('react-reveal/Fade')
+
+/*type ErrorsType = {
+    name: string
+}*/
 
 export function Contacts() {
 
     const formik = useFormik({
         validate: (values) => {
+            //const errors = {}
+
             if (!values.name) {
                 return {
                     name: 'Name is required'
@@ -67,9 +73,11 @@ export function Contacts() {
                                    name={"name"}
                                    placeholder={'Name'}
                                    onChange={formik.handleChange}
-
+                                   onBlur={formik.handleBlur}
                             />
                         </Fade>
+                        {formik.touched.name && formik.errors.name
+                            ? <div className={style.error}>{formik.errors.name}</div> : null}
                         <Fade>
                             <input className={style.input}
                                    value={formik.values.contacts}
@@ -77,16 +85,22 @@ export function Contacts() {
                                    name={"contacts"}
                                    placeholder={'Your contacts'}
                                    onChange={formik.handleChange}
+                                   onBlur={formik.handleBlur}
                             />
                         </Fade>
+                        {formik.touched.contacts && formik.errors.contacts
+                            ? <div className={style.error}>{formik.errors.contacts}</div> : null}
                         <Fade>
                             <textarea className={style.textarea}
                                       value={formik.values.message}
                                       name={"message"}
                                       onChange={formik.handleChange}
-                                      placeholder={'Your message'}>
-                            </textarea>
+                                      placeholder={'Your message'}
+                                      onBlur={formik.handleBlur}
+                            />
                         </Fade>
+                        {formik.touched.message && formik.errors.message
+                            ? <div className={style.error}>{formik.errors.message}</div> : null}
                         <Fade>
                             <button type={"submit"}
                                     disabled={formik.isSubmitting}
