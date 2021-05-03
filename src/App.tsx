@@ -1,6 +1,5 @@
 import React from 'react';
 import style from './App.module.css';
-import {Header} from "./header/Header";
 import {Main} from "./main/Main";
 import {Skills} from "./skills/Skills";
 import {Contacts} from "./contacts/Contacts";

@@ -2,7 +2,7 @@ import React from 'react';
 import style from './Skills.module.scss';
 import {Skill} from "./skill/Skill";
 import {Title} from "../common/components/title/Title";
-import {faCss3, faCss3Alt, faHtml5} from '@fortawesome/free-brands-svg-icons';
+import {faCss3Alt, faHtml5} from '@fortawesome/free-brands-svg-icons';
 import {faReact} from '@fortawesome/free-brands-svg-icons';
 import {faJs} from '@fortawesome/free-brands-svg-icons';
 import {SecondarySkill} from './secondarySkill/SecondarySkill';
@@ -31,25 +31,25 @@ export function Skills() {
                     <div className={style.skills}>
                         <Skill title={"React"}
                                icon={faReact}
-                               description={"This is my lovely technology. I like it."}/>
+                               description={"React is front end, JavaScript library for building user interfaces or UI components"}/>
                         <Skill title={"Redux"}
                                icon={faFileArchive}
-                               description={"This is my lovely technology. I like it."}/>
+                               description={"Redux is JavaScript library for managing application state"}/>
                         <Skill title={"TypeScript"}
                                icon={faFileCode}
-                               description={"This is my lovely technology. I like it."}/>
+                               description={"TypeScript is a superset of JavaScript which provides optional static typing"}/>
                         <Skill title={"JavaScript"}
                                icon={faJs}
-                               description={"This is my lovely technology. I like it."}/>
+                               description={"JavaScript is a programming language"}/>
                         <Skill title={"HTML"}
                                icon={faHtml5}
-                               description={"This is my lovely technology. I like it."}/>
+                               description={"HTML is the standard markup language for creating Web pages"}/>
                         <Skill title={"CSS"}
                                icon={faCss3Alt}
-                               description={"This is my lovely technology. I like it."}/>
+                               description={"CSS is the coding language that gives a website its look and layout"}/>
                     </div>
                     <div className={style.secondarySkills}>
-                        {secondarySkills.map(skill => <SecondarySkill skillName={skill}/>)}
+                        {secondarySkills.map(skill => <SecondarySkill key={skill} skillName={skill}/>)}
                     </div>
                 </div>
             </div>

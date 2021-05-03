@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import style from './BurgerNavigation.module.scss';
-import {Link, animateScroll as scroll} from "react-scroll";
+import {Link} from "react-scroll";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import s from "../skills/skill/Skill.module.scss";

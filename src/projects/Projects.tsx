@@ -30,13 +30,13 @@ export function Projects() {
                         githubLink={"https://github.com/FrontendTerminator/todolist"}
                         style={todolist}
                         title={'Todolist'}
-                        description={'Todolist - training application'}/>
+                        description={'Todolist - react applications for keeping a list of completed tasks'}/>
                     <WorkBlock
                         link={"https://FrontendTerminator.github.io/way_of_the_samurai"}
                         githubLink={"https://github.com/FrontendTerminator/way_of_the_samurai"}
                         style={social}
                         title={'Social network'}
-                        description={'social network - training application'}/>
+                        description={'Social network - social application'}/>
                 </div>
             </div>
         </div>
