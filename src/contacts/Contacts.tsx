@@ -2,7 +2,7 @@ import React from 'react';
 import style from './Contacts.module.scss';
 import {Title} from "../common/components/title/Title";
 import axios from 'axios';
-import {Field, Form, useFormik} from "formik";
+import {useFormik} from "formik";
 import ReactTypingEffect from "react-typing-effect";
 
 const Fade = require('react-reveal/Fade')
@@ -77,7 +77,7 @@ export function Contacts() {
                             />
                         </Fade>
                         {formik.touched.name && formik.errors.name
-                            ? <div className={style.error}>{formik.errors.name}</div> : null}
+                            ? <Fade><div className={style.error}>{formik.errors.name}</div></Fade> : null}
                         <Fade>
                             <input className={style.input}
                                    value={formik.values.contacts}
@@ -89,7 +89,7 @@ export function Contacts() {
                             />
                         </Fade>
                         {formik.touched.contacts && formik.errors.contacts
-                            ? <div className={style.error}>{formik.errors.contacts}</div> : null}
+                            ? <Fade><div className={style.error}>{formik.errors.contacts}</div></Fade> : null}
                         <Fade>
                             <textarea className={style.textarea}
                                       value={formik.values.message}
@@ -100,7 +100,7 @@ export function Contacts() {
                             />
                         </Fade>
                         {formik.touched.message && formik.errors.message
-                            ? <div className={style.error}>{formik.errors.message}</div> : null}
+                            ? <Fade><div className={style.error}>{formik.errors.message}</div></Fade> : null}
                         <Fade>
                             <button type={"submit"}
                                     disabled={formik.isSubmitting}
