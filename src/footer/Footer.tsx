@@ -14,8 +14,8 @@ export function Footer() {
                     <div className={style.iconsBlock}>
                         <a className={style.link} href="https://www.linkedin.com/in/koba-mikutishvili-27a01120b/">Linkedin</a>
                         <a className={style.link} href="https://github.com/FrontendTerminator">GitHub</a>
-                        <a className={style.link} href="https://www.instagram.com/koba_mikutishvili/">Instagram</a>
                         <a className={style.link} href="https://web.telegram.org/#/@Koba_Mikutishvili">Telegram</a>
+                        <a className={style.link} href="https://www.instagram.com/koba_mikutishvili/">Instagram</a>
                         <a className={style.link} href="https://vk.com/koba_jr">Vkontakte</a>
                         <a className={style.link} href="https://www.facebook.com/">Facebook</a>
                     </div>
