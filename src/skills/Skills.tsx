@@ -13,8 +13,9 @@ const Fade = require('react-reveal/Fade')
 export function Skills() {
 
     const secondarySkills = [
-        'Redux-Thunk', 'Material UI', 'Sass', 'module css', 'react router dom', 'Git',
-        'Rest API', 'Jest test', 'Storybook', 'Formik', 'Redux form', 'Axios', 'WebStorm', 'npm', 'yarn', 'Visual Studio Code',
+        'Rest API', 'Axios', 'Websockets', 'React-Redux', 'Redux-Thunk', 'react router dom', 'Jest test',
+        'Material UI', 'Storybook', 'Formik', 'Sass', 'module css', 'Git',
+        'Redux form', 'WebStorm', 'npm', 'yarn', 'Visual Studio Code',
         'Flexbox', 'Flux architecture', 'CRM', 'Hooks', 'Hocs', 'SCSS', 'GitHub', 'Heroku'
     ]
 
