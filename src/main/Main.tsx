@@ -49,7 +49,7 @@ export function Main() {
                                            speed={100}
                                            eraseSpeed={70}
                                            typingDelay={2000}
-                                           text={["Frontend Developer", "Welcome to my page"]}
+                                           text={["Front-end Developer", "Welcome to my page"]}
                         />
                     </div>
                     <div className={style.photoBlock}>
